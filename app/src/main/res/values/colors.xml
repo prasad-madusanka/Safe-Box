@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5c6fd5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#f1f8328e</color>
+    <color name="yellow">#ffdd00</color>
+    <color name="colorPrimaryLula">#366cf7</color>
+    <color name="colorPrimaryLulaLogoAdd">#2be768</color>
+    <color name="startup_activity">#010132</color>
+    <color name="social_Icon">#fe050d56</color>
+    <color name="show_pwds">#f5b609</color>
+    <color name="sign_in">#f243586e</color>
+    <color name="sign_in_button">#19a3ba</color>
+    <color name="grey">#b5b5b5</color>
+    <color name="customGreen1">#cd34c764</color>
+    <color name="customColour2">#ff4444</color>
+    <color name="customColour3">#7598b8</color>
+    <color name="customColour4">#0d1729</color>
+    <color name="customColourprofile">#01013c</color>
+    <color name="Login">#afb0af</color>
+    <color name="registerEmail">#f0a90e</color>
+    <color name="Notes">#646464</color>
+    <color name="VaultSplashBackground">#3090d8</color>
+
+
+</resources>

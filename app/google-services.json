@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "868509207307",
+    "firebase_url": "https://abstract-27d93.firebaseio.com",
+    "project_id": "abstract-27d93",
+    "storage_bucket": "abstract-27d93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:868509207307:android:0a3865892cde83cc",
+        "android_client_info": {
+          "package_name": "com.prasad.safeboxApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "868509207307-9iai5ogh91ggfg7lpkjmnik3mpci9gbv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prasad.safeboxApp",
+            "certificate_hash": "3f41dd325e483f64624bea915c7c357a454b1123"
+          }
+        },
+        {
+          "client_id": "868509207307-n0v5qa856r2pm2lu0gh30kbvcs4kl0hl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOXNJd2fOC_QJNhhvQaKz_aChJMRwiHzg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "868509207307-n0v5qa856r2pm2lu0gh30kbvcs4kl0hl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

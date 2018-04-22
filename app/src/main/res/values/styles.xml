@@ -1,0 +1,39 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="white" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!--This will set colors to mainActivity,setUpPassword & requestPassword-->
+    </style>
+
+    <style name="menu" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/customColour4</item>
+    </style>
+
+    <style name="custom_red" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/customColour2</item>
+    </style>
+
+
+    <style name="profile" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/customColourprofile</item>
+    </style>
+
+
+    <style name="holo_blue_light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@android:color/holo_blue_light</item>
+    </style>
+
+    <style name="custom_green" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/customGreen1</item>
+    </style>
+
+</resources>

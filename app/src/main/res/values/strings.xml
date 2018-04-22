@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">SafeBox</string>
+    <string name="facebook_app_id">428849550783549</string>
+    <string name="fb_login_protocol_scheme">fb428849550783549</string>
+    <string name="version">V1.0</string>
+
+    <string name="notes_avd_a">Tip...</string>
+    <string name="notes_avd_b">Press PLUS button to add a note</string>
+    <string name="notes_avd_c">Tap on a note,which need to view</string>
+    <string name="notes_avd_d">A long press is need to delete a note</string>
+    <string name="click_anywhere">Click anywhere to go next</string>
+    <string name="restore">Tap on an item,which need to restore</string>
+    <string name="permanantlyDelete">A long press is need to delete an item permanently</string>
+
+    <string name="register_done_a">Done !!!</string>
+    <string name="register_done_b">Previous step completed</string>
+    <string name="register_done_c">We need one tap to start your experience </string>
+    <string name="request_password_a">Password</string>
+    <string name="request_password_b">You need to type the password to access</string>
+    <string name="done">Done</string>
+
+    <string name="vault_add_a">Add New Password</string>
+    <string name="vault_add_b">Click the \"Plus\" to add </string>
+    <string name="vault_add_c">This image is a resources of Vault android app,PLUS mark</string>
+    <string name="vault_add_activity_a">Username</string>
+    <string name="vault_add_activity_b">Re-enter</string>
+    <string name="vault_add_activity_c">Password</string>
+    <string name="vault_add_activity_d">Description</string>
+    <string name="vault_remove_a">Delete or Restore Password</string>
+    <string name="bin">Trash</string>
+    <string name="click_to_open">Click to open</string>
+    <string name="vault_show_content">View Vault</string>
+
+
+    <string name="notes">Notes</string>
+    <string name="noteAdd">Add Note</string>
+    <string name="noteDelete">Delete Note</string>
+
+    <string name="vault">Vault</string>
+    <string name="vaultAdd">Add Password</string>
+    <string name="vaultDelete">Delete Password</string>
+    <string name="vaultView">View</string>
+
+    <string name="profile">Profile</string>
+    <string name="reset">Reset</string>
+    <string name="logout">Logout</string>
+
+    <string name="downloaded_image_resource">This image is a resources of a web site,downloaded from google</string>
+
+
+</resources>

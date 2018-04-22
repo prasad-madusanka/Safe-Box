@@ -1,0 +1,54 @@
+//noinspection GradleCompatible
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'abstract'
+            keyPassword 'abs-xcui-num12-letX'
+            storeFile file('/Users/Prasad/Desktop/abstract.jks')
+            storePassword 'abs-xcui-num12-letX'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.prasad.safeboxApp"
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile files('libs/sun.misc.BASE64Decoder.jar')
+    compile files('libs/picasso-2.5.2.jar')
+    compile files('libs/MD5.jar')
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    compile 'com.google.firebase:firebase-core:10.2.4'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.google.firebase:firebase-auth:10.2.4'
+    compile 'com.google.android.gms:play-services-auth:10.2.4'
+
+    testCompile 'junit:junit:4.12'
+}
+apply plugin: 'com.google.gms.google-services'

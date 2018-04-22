@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_green_light"
+    android:orientation="vertical"
+    android:scrollbarSize="0dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@color/Notes">
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="103dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/noteDelete"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.464"
+                    app:layout_constraintLeft_toLeftOf="@+id/deleteNote"
+                    app:layout_constraintRight_toRightOf="@+id/deleteNote"
+                    app:layout_constraintTop_toBottomOf="@+id/deleteNote"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/noteAdd"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/addNote"
+                    app:layout_constraintRight_toRightOf="@+id/addNote"
+                    app:layout_constraintTop_toBottomOf="@+id/addNote"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageButton
+                    android:id="@+id/deleteNote"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/delete"
+                    app:layout_constraintLeft_toRightOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+                <ImageButton
+                    android:id="@+id/addNote"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/add"
+                    app:layout_constraintRight_toLeftOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+                <ImageButton
+                    android:id="@+id/notes"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription=""
+                    android:scaleType="centerInside"
+                    android:src="@drawable/notes"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="0.3"
+                    android:text="@string/notes"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="@+id/notes"
+                    app:layout_constraintRight_toRightOf="@+id/notes"
+                    app:layout_constraintTop_toBottomOf="@+id/notes" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@android:color/holo_blue_light">
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="116dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/vaultDelete"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.402"
+                    app:layout_constraintLeft_toLeftOf="@+id/deleteVault"
+                    app:layout_constraintRight_toRightOf="@+id/deleteVault"
+                    app:layout_constraintTop_toBottomOf="@+id/deleteVault"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/vaultView"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/viewVault"
+                    app:layout_constraintRight_toRightOf="@+id/viewVault"
+                    app:layout_constraintTop_toBottomOf="@+id/viewVault" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="101dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/vaultAdd"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.506"
+                    app:layout_constraintLeft_toLeftOf="@+id/addVault"
+                    app:layout_constraintRight_toRightOf="@+id/addVault"
+                    tools:ignore="RtlHardcoded,UnknownId"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@+id/addVault" />
+
+                <ImageButton
+                    android:id="@+id/deleteVault"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/delete"
+                    app:layout_constraintLeft_toRightOf="@+id/vault"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11"
+                    tools:ignore="ContentDescription,RtlHardcoded"
+                    android:layout_marginStart="32dp" />
+
+                <ImageButton
+                    android:id="@+id/viewVault"
+                    android:layout_width="83dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/view"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintLeft_toLeftOf="@+id/textView11"
+                    app:layout_constraintRight_toRightOf="@+id/textView11"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+                <ImageButton
+                    android:id="@+id/addVault"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription=""
+                    android:scaleType="centerInside"
+                    android:src="@drawable/add"
+                    app:layout_constraintRight_toLeftOf="@+id/vault"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11"
+                    tools:ignore="ContentDescription,RtlHardcoded" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/vault"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="@+id/vault"
+                    app:layout_constraintRight_toRightOf="@+id/vault"
+                    app:layout_constraintTop_toBottomOf="@+id/vault" />
+
+                <ImageButton
+                    android:id="@+id/vault"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription=""
+                    android:scaleType="centerInside"
+                    android:src="@drawable/vaults"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="@android:color/holo_orange_light"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="8dp">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/reset"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/reset"
+                    app:layout_constraintRight_toRightOf="@+id/reset"
+                    app:layout_constraintTop_toBottomOf="@+id/reset" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/profile"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_bias="0.49"
+                    app:layout_constraintLeft_toLeftOf="@+id/profile"
+                    app:layout_constraintRight_toRightOf="@+id/profile"
+                    app:layout_constraintTop_toBottomOf="@+id/profile" />
+
+                <ImageButton
+                    android:id="@+id/reset"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/reset"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,RtlHardcoded"
+                    app:layout_constraintRight_toLeftOf="@+id/textView28"
+                    android:layout_marginRight="32dp" />
+
+                <ImageButton
+                    android:id="@+id/profile"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/profile"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription,RtlHardcoded"
+                    app:layout_constraintLeft_toRightOf="@+id/textView28"
+                    android:layout_marginLeft="32dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/logout"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="@+id/logout"
+                    app:layout_constraintRight_toRightOf="@+id/logout"
+                    app:layout_constraintTop_toBottomOf="@+id/logout"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="8dp" />
+
+                <ImageButton
+                    android:id="@+id/logout"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/logout"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ContentDescription" />
+            </android.support.constraint.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

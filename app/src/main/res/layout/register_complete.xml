@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <TextView
+                android:id="@+id/txt_done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/register_done_a"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="36sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.16000003" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/register_done_b"
+                android:textAlignment="center"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="@+id/txt_done"
+                app:layout_constraintRight_toRightOf="@+id/txt_done"
+                app:layout_constraintTop_toBottomOf="@+id/txt_done"
+                app:layout_constraintHorizontal_bias="0.5" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/register_done_c"
+                android:textAlignment="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/fingerPrint"
+                android:layout_width="200dp"
+                android:layout_height="153dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginTop="40dp"
+                android:contentDescription="@string/downloaded_image_resource"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="@+id/textView26"
+                app:layout_constraintRight_toRightOf="@+id/textView26"
+                app:layout_constraintTop_toBottomOf="@+id/textView26"
+                app:layout_constraintVertical_bias="0.04"
+                app:srcCompat="@drawable/fingerprint" />
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</ScrollView>
